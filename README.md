@@ -1,5 +1,6 @@
 # RJW-BANW-support
-Provides RJW compatibility for BlueArchive-NewWorld
+为蔚蓝档案-新世界提供rjw补丁  
+Provides RJW compatibility for BlueArchive-NewWorld  
 
 ## Requirements
 Archive.NewWorld: https://steamcommunity.com/sharedfiles/filedetails/?id=3560667190  
