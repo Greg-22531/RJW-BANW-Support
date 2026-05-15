@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Patch>
+    <Operation Class="PatchOperationRemove">
+        <xpath>
+        //bodyAddons/li[.//Apparel/hiddenUnderApparelTag/li="BANW_Body"]//Apparel/hiddenUnderApparelTag
+        </xpath>
+    </Operation>
+
+    <!-- 防止身体贴图高于衣服 -->
+    <Operation Class="PatchOperationReplace">
+      <xpath>
+      //alienRace/generalSettings/alienPartGenerator/bodyAddons/li[name='KivotosStudent_Body']/offsets
+      </xpath>
+      <value>
+          <offsets>
+              <north>
+                  <layerOffset>0.5</layerOffset>
+                  <offset>(0,0)</offset>
+              </north>
+              <south>
+                  <layerOffset>-0.5</layerOffset>
+                  <offset>(0,0)</offset>
+              </south>
+              <east>
+                  <layerOffset>-1</layerOffset>
+                  <offset>(0,0)</offset>
+              </east>
+          </offsets>
+      </value>
+    </Operation>
+
+    <!-- 基础设定更改 -->
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>
+        Defs/AlienRace.ThingDef_AlienRace[@ParentName="BasePawn" and (@Name="BANW_StudentThingBase" or @Name="BANW_SenseiThingBase")]/alienRace/raceRestriction/onlyUseRaceRestrictedApparel
+        </xpath>
+        <value>
+            <onlyUseRaceRestrictedApparel>false</onlyUseRaceRestrictedApparel><!-- 只能穿戴本种族衣物 -->
+        </value>
+    </Operation>
+
+</Patch>

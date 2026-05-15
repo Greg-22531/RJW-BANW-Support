@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Patch>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>
+        Defs/AlienRace.ThingDef_AlienRace[@ParentName="BasePawn" and (@Name="BANW_StudentThingBase" or @Name="BANW_SenseiThingBase")]/alienRace/raceRestriction
+        </xpath>
+        <value>
+            <blackEndoCategories MayRequire="Ludeon.RimWorld.Biotech">
+                <li MayRequire="Ludeon.RimWorld.Biotech">Melanin</li>
+                <li MayRequire="Ludeon.RimWorld.Biotech">BodyType</li>
+                <li MayRequire="Ludeon.RimWorld.Biotech">Ears</li>
+                <li MayRequire="Ludeon.RimWorld.Biotech">Nose</li>
+                <li MayRequire="Ludeon.RimWorld.Biotech">Voice</li>
+                <li MayRequire="Ludeon.RimWorld.Biotech">Headbone</li>
+                <li MayRequire="Ludeon.RimWorld.Biotech">Head</li>
+                <li MayRequire="Ludeon.RimWorld.Biotech">Jaw</li>
+                <li MayRequire="Ludeon.RimWorld.Biotech">HairColor</li>
+            </blackEndoCategories>
+            <blackGeneTags MayRequire="Ludeon.RimWorld.Biotech">
+                <li MayRequire="Ludeon.RimWorld.Biotech">HairStyle</li>
+                <li MayRequire="Ludeon.RimWorld.Biotech">EyeColor</li>
+                <li MayRequire="Ludeon.RimWorld.Biotech">Tail</li>
+                <li MayRequire="Ludeon.RimWorld.Biotech">BeardStyle</li>
+                <li MayRequire="Ludeon.RimWorld.Biotech">Fur</li>
+            </blackGeneTags>
+            <blackGeneList>
+                <li MayRequire="Ludeon.RimWorld.Biotech">Furskin</li>
+                <li MayRequire="Ludeon.RimWorld.Biotech">Brow_Heavy</li>
+            </blackGeneList>
+            <blackXenotypeList>
+                <li MayRequire="Ludeon.RimWorld.Biotech">Baseliner</li>
+                <li MayRequire="Ludeon.RimWorld.Biotech">Dirtmole</li>
+                <li MayRequire="Ludeon.RimWorld.Biotech">Genie</li>
+                <li MayRequire="Ludeon.RimWorld.Biotech">Hussar</li>
+                <li MayRequire="Ludeon.RimWorld.Biotech">Sanguophage</li>
+                <li MayRequire="Ludeon.RimWorld.Biotech">Neanderthal</li>
+                <li MayRequire="Ludeon.RimWorld.Biotech">Pigskin</li>
+                <li MayRequire="Ludeon.RimWorld.Biotech">Impid</li>
+                <li MayRequire="Ludeon.RimWorld.Biotech">Waster</li>
+                <li MayRequire="Ludeon.RimWorld.Biotech">Yttakin</li>
+                <li MayRequire="Ludeon.RimWorld.Biotech">Highmate</li>
+            </blackXenotypeList>
+
+
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>
+        Defs/AlienRace.ThingDef_AlienRace[@ParentName="BasePawn" and (@Name="BANW_StudentThingBase" or @Name="BANW_SenseiThingBase")]/alienRace/raceRestriction/onlyHaveRaceRestrictedGenes
+        </xpath>
+        <value>
+            <onlyHaveRaceRestrictedGenes>false</onlyHaveRaceRestrictedGenes><!-- 只能拥有本种族基因 -->
+        </value>
+    </Operation>
+</Patch>
