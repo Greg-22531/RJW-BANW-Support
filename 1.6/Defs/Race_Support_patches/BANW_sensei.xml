@@ -3,6 +3,7 @@
 	<rjw.RaceGroupDef>
 		<defName>BANW_Sensei</defName>
 		<raceNames>
+			<li>BANW_KivotosSensei</li>
 			<li>BANW_Sensei_race</li>
 		</raceNames>
 		
