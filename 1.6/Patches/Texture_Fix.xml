@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Patch>
+    <Operation Class="PatchOperationReplace">
+        <xpath>
+            /Defs/PawnKindDef/modExtensions/li[@Class="ChezhouLib.HAR.Extension.kindRuleHAR"]
+            /bodyAddonRules/li[BodyAddonName="KivotosStudent_Body_layer2"]/BodyAddonName
+        </xpath>
+        <value>
+            <BodyAddonName>KivotosStudent_Body</BodyAddonName>
+        </value>
+    </Operation>
+</Patch>
