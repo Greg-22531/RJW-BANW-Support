@@ -35,5 +35,5 @@
 		<li>rjw.menstruation</li>
 		<li>rjw.sexperience</li>
 	</loadAfter>
-	<description>-</description>
+	<description>为 BlueArchive-NewWorld（BANW）提供 RimJobWorld的兼容支持。</description>
 </ModMetaData>
